@@ -188,7 +188,7 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('n', '<leader>qq', ':wqa<CR>', { desc = 'Save and quit Neovim' })
 vim.keymap.set('n', '<leader>qw', ':wq<CR>', { desc = 'Save and quit current window' })
 vim.keymap.set('n', '<leader>qf', ':q<CR>', { desc = 'Quit current window' })
-vim.keymap.set('n', '<leader>qs', ':w<CR>', { desc = 'Save window' })
+vim.keymap.set('n', '<leader>fs', ':w<CR>', { desc = 'Save window' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -288,6 +288,7 @@ require('lazy').setup {
         ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
         ['<leader>q'] = { name = '[Q]uit', _ = 'which_key_ignore' },
+        ['<leader>f'] = { name = '[F]iles', _ = 'which_key_ignore' },
       }
     end,
   },
